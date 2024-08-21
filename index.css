@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(to bottom, #ebebeb, #c4c4c4);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.container {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-img {
+    cursor: pointer;
+    margin-left: 3px;
+    margin-right: 7px;
+}
+
+@keyframes openWeb {
+    0% {
+        margin-top: 30px;
+        opacity: 0.1;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+* {
+    font-family: "Montserrat";
+}
+.web:not(.load) {
+    display: none;
+}
+.web.load { 
+    width: 1000px;
+    height: 700px;
+    padding: 30px;
+    padding-left: 45px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(65, 65, 65, 0.3);
+    animation: openWeb 0.8s;
+}
+button {
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid gray;
+    transition: 0.3s color, 0.3s background-color;
+}
+button:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
