@@ -36,13 +36,13 @@ body {
 }
 .web.load { 
     width: 1000px;
-    height: 700px;
+    height: 400px;
     padding: 30px;
     padding-left: 45px;
     background-color: white;
     border-radius: 30px;
-    box-shadow: 0 0 10px rgba(65, 65, 65, 0.3);
-    animation: openWeb 0.8s;
+    box-shadow: 0 0 80px rgba(65, 65, 65, 0.3);
+    animation: openWeb 1.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 button {
     width: 200px;
@@ -55,4 +55,8 @@ button:hover {
     background-color: gray;
     color: white;
     cursor: pointer;
+}
+.works {
+    height: 30px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%);
 }
